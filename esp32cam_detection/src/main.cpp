@@ -333,16 +333,14 @@ void change_stats(){
 }
 
 void setup() {
-  // put your setup code here, to run once:
+
   initBluetooth();
   initWifi();
-//  
-myMotors.initMotor();
-myCamera.initCam();
+  myMotors.initMotor();
+  myCamera.initCam();
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
   change_stats();
   state_robot(states);
   delay(1000);

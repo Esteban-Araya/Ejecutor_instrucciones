@@ -94,6 +94,10 @@ void Motor_esp::back(int vel,int time = 0){
   move_back(LEFT,vel);
   move_back(RIGHT,vel);
   delay(time);
+}
 
+void Motor_esp::stop(){
+  move_back(LEFT,0);
+  move_back(RIGHT,0);
 }
 
